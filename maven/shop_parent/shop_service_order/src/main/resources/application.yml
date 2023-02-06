@@ -1,0 +1,20 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: service-order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.15:3306/shop?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    database: MySQL
+    show-sql: true
+    open-in-view: true
+eureka:
+  client:
+    serviceUrl: # eureka server的路径
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      prefer-ip-address: true #使用ip注册

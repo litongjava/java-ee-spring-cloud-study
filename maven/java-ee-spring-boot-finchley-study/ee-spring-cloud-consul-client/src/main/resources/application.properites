@@ -1,0 +1,4 @@
+spring.application.name=consul-client
+server.port=8072
+spring.cloud.consul.host=192.168.99.214
+spring.cloud.consul.port=8500
