@@ -1,0 +1,14 @@
+server:
+  port: 8006 #端口
+spring:
+  application:
+    #访问名称
+    name: consul-provider-product
+  cloud:
+    consul:
+      #服务地址
+      host: localhost
+      #服务端口
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
